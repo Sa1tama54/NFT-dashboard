@@ -1,0 +1,100 @@
+@function rem($size) {
+  @return $size / $root-font-size * 1rem;
+}
+
+@mixin menu-item {
+  padding: 17px 12px;
+  display: flex;
+  align-items: center;
+  color: $sidebar-menu-color;
+  font-size: $sidebar-item-size;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    @include menu-item-effect;
+  }
+}
+
+@mixin menu-item-effect {
+  background-color: rgba(126, 107, 239, 4%);
+  position: relative;
+  width: 100%;
+  color: #b7abff;
+  border-radius: 5px;
+}
+
+@mixin section-head {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+@mixin article-head {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 45px 0 14px;
+  }
+
+  &__title {
+    font-size: rem(18px);
+    font-weight: 600;
+    color: $titleColor2;
+  }
+
+  &__subtitle {
+    font-size: rem(14px);
+    font-weight: 500;
+    color: rgba(207, 203, 229, 0.62);
+    cursor: pointer;
+  }
+}
+
+@mixin section-title {
+  color: $titleColor;
+  font-size: rem(24px);
+  font-weight: 600;
+}
+
+@mixin nft-info-block {
+  &__info {
+    padding: 21px 12px 28px 7px;
+    color: $titleColor2;
+  }
+
+  &__name {
+    font-size: rem(18px);
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__current-bid {
+    font-size: rem(12px);
+    font-weight: 500;
+  }
+
+  &__price {
+    font-size: rem(14px);
+    font-weight: 600;
+    color: #b7abff;
+    display: inline-flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background: url("../../assets/images/trending/current-bild.svg") no-repeat;
+      width: 9px;
+      height: 14px;
+      padding-right: 5px;
+    }
+  }
+}

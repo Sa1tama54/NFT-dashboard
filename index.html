@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <div class="sidebar__user">
+          <img src="./assets/images/sidebar/avatar.png" alt="user-avatar" />
+          <h1 class="sidebar__username">Leonard</h1>
+        </div>
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu-item sidebar__menu-item--active">
+            <img src="./assets/images/sidebar/Menu.svg" alt="menu-icon" />
+            Dashboard
+          </li>
+          <li class="sidebar__menu-item" data-item="2">
+            <img src="./assets/images/sidebar/market.svg" alt="market-icon" />
+            Market
+          </li>
+          <li class="sidebar__menu-item">
+            <img src="./assets/images/sidebar/ticket.svg" alt="ticket-icon" />
+            Active Bids
+          </li>
+        </ul>
+        <h4 class="sidebar__profile-title">PROFILE</h4>
+        <ul class="sidebar__profile-menu">
+          <li class="sidebar__profile-item">
+            <img src="./assets/images/sidebar/star.svg" alt="menu-icon" />
+            My Portfolio
+          </li>
+          <li class="sidebar__profile-item">
+            <img src="./assets/images/sidebar/folder.svg" alt="menu-icon" />
+            History
+          </li>
+          <li class="sidebar__profile-item">
+            <img src="./assets/images/sidebar/wallet.svg" alt="menu-icon" />
+            My Wallet
+          </li>
+          <li class="sidebar__profile-item">
+            <img src="./assets/images/sidebar/settings.svg" alt="menu-icon" />
+            Setting
+          </li>
+        </ul>
+        <article class="sidebar__balance-card">
+          <h4 class="sidebar__balance-title">Your Balance</h4>
+          <span class="sidebar__balance-amount">9.04 ETH</span>
+          <button class="sidebar__balance-btn">Top up Balance</button>
+        </article>
+      </aside>
+      <div class="container">
+        <header class="header">
+          <div class="header__search">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="Search Nfts..."
+            />
+          </div>
+          <div class="header__user">
+            <img
+              src="./assets/images/sidebar/avatar.png"
+              alt="user-avatar"
+              class="header__user-avatar"
+            />
+            <div class="header__user-info">
+              <h5 class="header__user-name">Adelaide Perry</h5>
+              <span class="header__user-role">Creator</span>
+            </div>
+            <div class="header__down-arrow"></div>
+          </div>
+          <div class="header__notifications">
+            <img
+              class="header__notifications-icon"
+              src="./assets/images/header/notification.svg"
+              alt="notification-icon"
+            />
+          </div>
+        </header>
+        <main>
+          <section class="trending-nfts">
+            <div class="trending-nfts__head">
+              <h2 class="trending-nfts__title">Trending NFT's</h2>
+              <nav class="trending-nfts__categories">
+                <ul class="trending-nfts__list">
+                  <li
+                    class="trending-nfts__list-item trending-nfts__list-item--active"
+                  >
+                    Art
+                  </li>
+                  <li class="trending-nfts__list-item">Music</li>
+                  <li class="trending-nfts__list-item">Collectibles</li>
+                  <li class="trending-nfts__list-item">See more</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="trending-nfts__content">
+              <div class="trending-nfts__nft">
+                <div class="trending-nfts__image-wrapper">
+                  <span class="trending-nfts__time">3 day left</span>
+                  <img
+                    src="./assets/images/trending/abstrac-girl.jpg"
+                    alt="abstrac-girl"
+                  />
+                  <div class="trending-nfts__person-wrapper">
+                    <span class="trending-nfts__person"></span>
+                    <span class="trending-nfts__person"></span>
+                  </div>
+                  <span class="trending-nfts__bookmark"></span>
+                </div>
+                <div class="trending-nfts__info">
+                  <h3 class="trending-nfts__name">Abstrac Girl</h3>
+                  <div class="trending-nfts__cost">
+                    <span class="trending-nfts__current-bid">Current Bid</span>
+                    <span class="trending-nfts__price">0.99 ETH</span>
+                    <span class="trending-nfts__course">$12,829</span>
+                  </div>
+                </div>
+              </div>
+              <div class="trending-nfts__nft">
+                <div class="trending-nfts__image-wrapper">
+                  <span class="trending-nfts__time">5 day left</span>
+                  <img
+                    src="./assets/images/trending/beautiful-flower.jpg"
+                    alt="beautiful-flower"
+                  />
+                  <div class="trending-nfts__person-wrapper">
+                    <span class="trending-nfts__person"></span>
+                    <span class="trending-nfts__person"></span>
+                    <span class="trending-nfts__person"></span>
+                  </div>
+                  <span class="trending-nfts__bookmark"></span>
+                </div>
+                <div class="trending-nfts__info">
+                  <h3 class="trending-nfts__name">Beautiful-Flower</h3>
+                  <div class="trending-nfts__cost">
+                    <span class="trending-nfts__current-bid">Current Bid</span>
+                    <span class="trending-nfts__price">0.99 ETH</span>
+                    <span class="trending-nfts__course">$12,829</span>
+                  </div>
+                </div>
+              </div>
+              <div class="trending-nfts__nft">
+                <div class="trending-nfts__image-wrapper">
+                  <span class="trending-nfts__time">2 day left</span>
+                  <img
+                    src="./assets/images/trending/abstrac-color.jpg"
+                    alt="abstrac-color"
+                  />
+                  <div class="trending-nfts__person-wrapper">
+                    <span class="trending-nfts__person"></span>
+                    <span class="trending-nfts__person"></span>
+                    <span class="trending-nfts__person"></span>
+                  </div>
+                  <span class="trending-nfts__bookmark"></span>
+                </div>
+                <div class="trending-nfts__info">
+                  <h3 class="trending-nfts__name">Abstrac Color</h3>
+                  <div class="trending-nfts__cost">
+                    <span class="trending-nfts__current-bid">Current Bid</span>
+                    <span class="trending-nfts__price">0.99 ETH</span>
+                    <span class="trending-nfts__course">$12,829</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <article class="recently-add">
+            <div class="recently-add__head">
+              <h3 class="recently-add__title">Recently add</h3>
+              <span class="recently-add__subtitle">See all</span>
+            </div>
+            <div class="recently-add__content content">
+              <div class="recently-add__image-wrapper">
+                <img
+                  src="./assets/images/recently-add/3d-circle-art.jpg"
+                  alt="3d-circle-art"
+                  class="recently-add__img"
+                />
+                <span class="recently-add__time">03:25:14</span>
+              </div>
+              <div class="recently-add__info">
+                <h3 class="recently-add__name">3D Circle Art</h3>
+                <div class="recently-add__cost">
+                  <span class="recently-add__current-bid">Current Bid</span>
+                  <span class="recently-add__price">0.99 ETH</span>
+                  <button class="recently-add__btn">Place Bid</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <section class="top-nfts">
+            <div class="top-nfts__head">
+              <h2 class="top-nfts__title">Top NFT's</h2>
+              <div class="top-nfts__time-selects">
+                <select>
+                  <option value="last-7-days">Last 7 days</option>
+                </select>
+                <select>
+                  <option value="all-times">All times</option>
+                </select>
+              </div>
+            </div>
+            <div class="top-nfts__content">
+              <table class="top-nfts__table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Collection</th>
+                    <th>Volume</th>
+                    <th>24h%</th>
+                    <th>Owners</th>
+                    <th>Items</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td class="top-nfts__table-collection">
+                      <img
+                        src="./assets/images/top-nfts/nft-1.png"
+                        alt="Abstrac paint"
+                      />
+                      Abstrac paint
+                    </td>
+                    <td>$8,021.99</td>
+                    <td class="negative">-28.28%</td>
+                    <td>10.5K</td>
+                    <td>121</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="top-nfts__table-collection">
+                      <img
+                        src="./assets/images/top-nfts/nft-2.png"
+                        alt="3D Circle Art"
+                      />
+                      3D Circle Art
+                    </td>
+                    <td>$8,021.99</td>
+                    <td class="positive">+11.18%</td>
+                    <td>10.5K</td>
+                    <td>121</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="top-nfts__table-collection">
+                      <img
+                        src="./assets/images/top-nfts/nft-3.png"
+                        alt="3D Digital Art"
+                      />
+                      3D Digital Art
+                    </td>
+                    <td>$8,021.99</td>
+                    <td class="negative">-28.28%</td>
+                    <td>10.5K</td>
+                    <td>121</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="top-nfts__table-collection">
+                      <img
+                        src="./assets/images/top-nfts/nft-4.png"
+                        alt="3D Cubo Art"
+                      />
+                      3D Cubo Art
+                    </td>
+                    <td>$8,021.99</td>
+                    <td class="positive">+11.18%</td>
+                    <td>10.5K</td>
+                    <td>121</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <article class="top-creators">
+            <div class="top-creators__head">
+              <h3 class="top-creators__title">Top Creators</h3>
+              <span class="top-creators__subtitle">See all</span>
+            </div>
+            <div class="top-creators__content content">
+              <ul class="top-creators__list">
+                <li class="top-creators__creator">
+                  <img
+                    src="./assets/images/creators/creator-1.png"
+                    alt="Joe Yates"
+                    class="top-creators__image"
+                  />
+                  <div class="top-creators__names">
+                    <span class="top-creators__name">Joe Yates</span>
+                    <span class="top-creators__nickname">@joe-y25</span>
+                  </div>
+                  <button class="top-creators__follow-btn">Follow</button>
+                </li>
+                <li class="top-creators__creator">
+                  <img
+                    src="./assets/images/creators/creator-2.png"
+                    alt="Adelaide Perry"
+                    class="top-creators__image"
+                  />
+                  <div class="top-creators__names">
+                    <span class="top-creators__name">Adelaide Perry</span>
+                    <span class="top-creators__nickname">@adelaide120</span>
+                  </div>
+                  <button class="top-creators__follow-btn">Follow</button>
+                </li>
+                <li class="top-creators__creator">
+                  <img
+                    src="./assets/images/creators/creator-3.png"
+                    alt="Emilie Butler"
+                    class="top-creators__image"
+                  />
+                  <div class="top-creators__names">
+                    <span class="top-creators__name">Emilie Butler</span>
+                    <span class="top-creators__nickname">@b_emilie</span>
+                  </div>
+                  <button class="top-creators__follow-btn">Follow</button>
+                </li>
+                <li class="top-creators__creator">
+                  <img
+                    src="./assets/images/creators/creator-4.png"
+                    alt="David Smit"
+                    class="top-creators__image"
+                  />
+                  <div class="top-creators__names">
+                    <span class="top-creators__name">David Smit</span>
+                    <span class="top-creators__nickname">@davidsmit</span>
+                  </div>
+                  <button class="top-creators__follow-btn">Follow</button>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

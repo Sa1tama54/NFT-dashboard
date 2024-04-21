@@ -1,0 +1,20 @@
+// colors
+$mainBgColor: #201e43;
+$titleColor: #f5f4fb;
+$titleColor2: #ecebf6;
+
+// sizes
+$root-font-size: 14px;
+
+@import "./helpers";
+
+// setups
+@import "./base";
+
+// blocks
+@import "./blocks/sidebar";
+@import "./blocks/header";
+@import "./blocks/trending-nfts";
+@import "./blocks/recently-add";
+@import "./blocks/top-nfts";
+@import "./blocks/creators";

@@ -1,0 +1,140 @@
+$sidebar-menu-color: #727190;
+$sidebar-item-size: 15px;
+
+.sidebar {
+  background-color: $mainBgColor;
+  padding-left: 28px;
+  display: grid;
+  grid-template-rows:
+    50px
+    35px
+    45px
+    minmax(150px, min-content)
+    75px
+    15px
+    45px
+    minmax(190px, min-content)
+    167px
+    minmax(165px, min-content)
+    55px;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    grid-row: 2 / 3;
+
+    img {
+      width: 35px;
+      margin-right: 9px;
+    }
+  }
+
+  &__username {
+    font-family: "Expletus Sans", sans-serif;
+    font-size: rem(24px);
+    font-weight: 500;
+    color: $titleColor;
+  }
+
+  &__menu {
+    grid-row: 4 / 5;
+
+    &-item {
+      @include menu-item;
+      position: relative;
+
+      &--active {
+        @include menu-item-effect;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 34px;
+          background-color: #8f7df8;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          box-shadow: -2px 0px 10px 2px rgba(106, 91, 255, 16%);
+          border-radius: 2px 0 0 2px;
+        }
+      }
+
+      img {
+        margin-right: 14px;
+      }
+
+      &:nth-child(2)::before {
+        content: "PRO";
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: rem(10px);
+        font-weight: 500;
+        color: #05cd99;
+        background-color: rgba(5, 205, 153, 11%);
+        padding: 3px 7px;
+        border-radius: 37px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  &__profile-title {
+    color: $sidebar-menu-color;
+    font-size: $sidebar-item-size;
+    font-weight: 500;
+    padding-left: 12px;
+    grid-row: 6 / 7;
+  }
+
+  &__profile-menu {
+    grid-row: 8 / 9;
+  }
+
+  &__profile-item {
+    @include menu-item;
+
+    img {
+      margin-right: 14px;
+    }
+  }
+
+  &__balance-card {
+    grid-row: 10 / 11;
+    max-width: 195px;
+    background: rgb(134, 140, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(134, 140, 255, 1) 0%,
+      rgba(67, 24, 255, 1) 100%
+    );
+    border-radius: 15px;
+    padding: 29px 16px;
+    color: #fff;
+  }
+
+  &__balance-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+
+  &__balance-amount {
+    display: inline-block;
+    font-size: rem(24px);
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  &__balance-btn {
+    padding: 10px 30px;
+    color: #444bf8;
+    border: none;
+    border-radius: 5px;
+    font-size: rem(12px);
+    font-weight: bold;
+  }
+}

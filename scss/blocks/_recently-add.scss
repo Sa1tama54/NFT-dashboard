@@ -1,0 +1,50 @@
+$recentlyAddMinHeight: 403px;
+
+.recently-add {
+  max-height: $recentlyAddMinHeight;
+
+  @include article-head;
+
+  &__image-wrapper {
+    position: relative;
+    height: 226px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+
+  &__time {
+    position: absolute;
+    left: 13px;
+    bottom: 16px;
+    display: block;
+    background-color: $mainBgColor;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: rem(10px);
+    color: #dfd9ff;
+  }
+
+  @include nft-info-block;
+
+  &__name {
+    margin-bottom: 0;
+  }
+
+  &__cost {
+    align-items: flex-end;
+  }
+
+  &__btn {
+    background-color: #5639ff;
+    padding: 10px 22px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: rem(12px);
+    font-weight: 600;
+  }
+}
